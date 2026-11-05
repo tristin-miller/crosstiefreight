@@ -112,14 +112,8 @@ a { color: var(--boxcar); }
 .masthead { background: var(--surface); border-bottom: 1px solid var(--rule); }
 .masthead-inner { display: flex; align-items: center; justify-content: space-between; gap: 16px; padding-block: 12px; }
 .brand { display: flex; align-items: center; gap: 12px; color: var(--ink); text-decoration: none; min-width: 0; }
-.brand-mark { width: 40px; height: 40px; flex: none; }
-.brand-mark .bm-tie { fill: var(--tie); }
-.brand-mark .bm-rail { fill: var(--rail); }
-.brand-text { display: grid; line-height: 1; }
-.brand-name { font-family: var(--font-display); font-size: 25px; font-weight: 900; letter-spacing: 0.06em; text-transform: uppercase; white-space: nowrap; }
-.brand-loc { font-family: var(--font-mono); font-size: 10.5px; letter-spacing: 0.2em; text-transform: uppercase; color: var(--muted); margin-top: 4px; }
+.brand-mark { width: 280px; max-width: calc(100vw - 172px); height: auto; flex: none; }
 .masthead .btn { min-height: 42px; padding: 0 16px; font-size: 15px; }
-@media (max-width: 400px) { .brand-name { font-size: 21px; } .brand-mark { width: 34px; height: 34px; } }
 
 /* Rail band: two rails over evenly spaced ties */
 .rails {
@@ -246,17 +240,7 @@ legend { padding: 0; margin-bottom: 8px; }
 <header class="masthead">
   <div class="wrap masthead-inner">
     <a class="brand" href="#top" aria-label="Crosstie Freight, back to top">
-      <svg class="brand-mark" viewBox="0 0 40 40" aria-hidden="true">
-        <rect class="bm-tie" x="4" y="6" width="32" height="5" rx="1"></rect>
-        <rect class="bm-tie" x="4" y="17.5" width="32" height="5" rx="1"></rect>
-        <rect class="bm-tie" x="4" y="29" width="32" height="5" rx="1"></rect>
-        <rect class="bm-rail" x="11" y="2" width="3.5" height="36"></rect>
-        <rect class="bm-rail" x="25.5" y="2" width="3.5" height="36"></rect>
-      </svg>
-      <span class="brand-text">
-        <span class="brand-name">Crosstie Freight</span>
-        <span class="brand-loc">Austin, Texas</span>
-      </span>
+      <img class="brand-mark" src="logo.png" alt="">
     </a>
     <a class="btn btn-primary" href="#quote">Get a quote</a>
   </div>
