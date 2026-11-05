@@ -23,39 +23,6 @@
   --font-body: "Source Sans 3", "Segoe UI", system-ui, sans-serif;
   --font-mono: "IBM Plex Mono", ui-monospace, Menlo, Consolas, monospace;
 }
-@media (prefers-color-scheme: dark) {
-  :root:not([data-theme="light"]) {
-    --ground: #121517;
-    --surface: #1A1E21;
-    --field: #15191C;
-    --ink: #E8EAE7;
-    --muted: #A2AAB0;
-    --rule: #2B3135;
-    --rule-strong: #4A5258;
-    --boxcar: #E07A63;
-    --on-boxcar: #121517;
-    --tie: #8A6E57;
-    --rail: #8F989E;
-    --signal: #E3A93A;
-    color-scheme: dark;
-  }
-}
-:root[data-theme="dark"] {
-  --ground: #121517;
-  --surface: #1A1E21;
-  --field: #15191C;
-  --ink: #E8EAE7;
-  --muted: #A2AAB0;
-  --rule: #2B3135;
-  --rule-strong: #4A5258;
-  --boxcar: #E07A63;
-  --on-boxcar: #121517;
-  --tie: #8A6E57;
-  --rail: #8F989E;
-  --signal: #E3A93A;
-  color-scheme: dark;
-}
-
 *, *::before, *::after { box-sizing: border-box; }
 html { scroll-behavior: smooth; }
 @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
@@ -112,7 +79,7 @@ a { color: var(--boxcar); }
 .masthead { background: var(--surface); border-bottom: 1px solid var(--rule); }
 .masthead-inner { display: flex; align-items: center; justify-content: space-between; gap: 16px; padding-block: 12px; }
 .brand { display: flex; align-items: center; gap: 12px; color: var(--ink); text-decoration: none; min-width: 0; }
-.brand-mark { width: 280px; max-width: calc(100vw - 172px); height: auto; flex: none; }
+.brand-mark { width: 240px; max-width: calc(100vw - 172px); height: auto; flex: none; }
 .masthead .btn { min-height: 42px; padding: 0 16px; font-size: 15px; }
 
 /* Rail band: two rails over evenly spaced ties */
